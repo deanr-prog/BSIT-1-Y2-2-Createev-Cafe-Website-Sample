@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #515f46;
+    z-index: 1000;
+    transition: opacity 0.3s ease; /* Smooth fade-out */
+}
+
+body.scrolled header {
+    opacity: 0; /* Hides when scrolling */
+}
+header {
+    top: 0;
+    width: 100%;
+    height: 80px; 
+    background: #515f46;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    text-decoration: none;
+}
+
+.logo-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Ace Sans FREE", sans-serif;
+}
+
+@font-face {
+    font-family: "Ace Sans FREE";
+    src: url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.eot");
+    src: url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.eot?#iefix")format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.woff2")format("woff2"),
+         url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.woff")format("woff"),
+         url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.ttf")format("truetype"),
+         url("https://db.onlinewebfonts.com/t/f3c4c2fc48adb5d90a39050fe05ec0bf.svg#Ace Sans FREE")format("svg");
+}

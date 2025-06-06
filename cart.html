@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="MenuDesign.css">
+</head>
+<body>
+
+  <nav class="top-navbar">
+    <div class="logo">CREATEEV CAFE</div>
+
+    <button class="hamburger" aria-label="Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="home.html#loyalty" class="nav-link">Loyalty Cards</a></li>
+      <li class="nav-item"><a href="home.html#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="Menu.html" class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="home.html#gallery" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="home.html#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>Your Cart</h1>
+    </div>
+  </header>
+
+  <section class="cart-container">
+    <h2>Items in Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-summary">
+      <strong>Total: </strong>
+      <span id="cart-total">₱0.00</span>
+    </div>
+    <div class="cart-actions">
+  <button id="cancel-order">Cancel Order</button>
+  <button id="order-now">Order Now</button>
+</div>
+
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
