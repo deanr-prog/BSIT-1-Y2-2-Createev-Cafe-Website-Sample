@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;&display=swap");
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+ }
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.comment {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.comment-author {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.comment-timestamp {
+    font-size: 0.8rem;
+    color: #777;
+}
+.comment-text {
+    white-space: pre-line;
+}
+.review-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #586e48;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+.review-button:hover {
+    background-color: #4a5d3f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.new-review-badge {
+    background-color: #10b981;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+.user-submitted-review {
+    border-left: 4px solid #10b981;
+    background-color: #f0fdf4;
+}
+
+/* Rating popup styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    display: none;
+}
+.rating-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: none;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+.rating-box header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.closebutton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+.closebutton:hover {
+    color: #333;
+}
+.stars {
+    margin: 20px 0;
+}
+.stars i {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+.stars i.active {
+    color: #ffc107;
+}
+.stars i:hover {
+    color: #ffc107;
+}
+.review-section {
+    margin-top: 20px;
+}
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
+.review-section button {
+    background-color: #586e48;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.review-section button:hover {
+    background-color: #4a5d3f;
+}
+.popup {
+    background-color: #586e48;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.popup:hover {
+    background-color: #4a5d3f;
+}
